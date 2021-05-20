@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7857A0F26565E98000C82A9 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7857A0E26565E98000C82A9 /* FileStorage.swift */; };
 		C7DF675F265564B30085C187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DF675E265564B30085C187 /* AppDelegate.swift */; };
 		C7DF6761265564B30085C187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DF6760265564B30085C187 /* SceneDelegate.swift */; };
 		C7DF6763265564B30085C187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DF6762265564B30085C187 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7857A0E26565E98000C82A9 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		C7DF675B265564B30085C187 /* fileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DF675E265564B30085C187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DF6760265564B30085C187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				C7DF675E265564B30085C187 /* AppDelegate.swift */,
 				C7DF6760265564B30085C187 /* SceneDelegate.swift */,
 				C7DF6762265564B30085C187 /* ViewController.swift */,
+				C7857A0E26565E98000C82A9 /* FileStorage.swift */,
 				C7DF6764265564B30085C187 /* Main.storyboard */,
 				C7DF6767265564BD0085C187 /* Assets.xcassets */,
 				C7DF6769265564BD0085C187 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7DF6763265564B30085C187 /* ViewController.swift in Sources */,
+				C7857A0F26565E98000C82A9 /* FileStorage.swift in Sources */,
 				C7DF675F265564B30085C187 /* AppDelegate.swift in Sources */,
 				C7DF6761265564B30085C187 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fileManager.fileManager;
+				PRODUCT_BUNDLE_IDENTIFIER = fileManager.fileManager2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fileManager.fileManager;
+				PRODUCT_BUNDLE_IDENTIFIER = fileManager.fileManager2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
