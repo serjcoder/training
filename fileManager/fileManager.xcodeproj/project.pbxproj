@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7175760265C2E32002D8942 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717575F265C2E32002D8942 /* UserNotifications.swift */; };
 		C7857A0F26565E98000C82A9 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7857A0E26565E98000C82A9 /* FileStorage.swift */; };
 		C7DF675F265564B30085C187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DF675E265564B30085C187 /* AppDelegate.swift */; };
 		C7DF6761265564B30085C187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DF6760265564B30085C187 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C717575F265C2E32002D8942 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
 		C7857A0E26565E98000C82A9 /* FileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		C7DF675B265564B30085C187 /* fileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DF675E265564B30085C187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				C7DF675E265564B30085C187 /* AppDelegate.swift */,
+				C717575F265C2E32002D8942 /* UserNotifications.swift */,
 				C7DF6760265564B30085C187 /* SceneDelegate.swift */,
 				C7DF6762265564B30085C187 /* ViewController.swift */,
 				C7857A0E26565E98000C82A9 /* FileStorage.swift */,
@@ -144,6 +147,7 @@
 				C7857A0F26565E98000C82A9 /* FileStorage.swift in Sources */,
 				C7DF675F265564B30085C187 /* AppDelegate.swift in Sources */,
 				C7DF6761265564B30085C187 /* SceneDelegate.swift in Sources */,
+				C7175760265C2E32002D8942 /* UserNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
