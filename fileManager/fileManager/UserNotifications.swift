@@ -8,25 +8,51 @@
 import Foundation
 import UserNotifications
 
+private struct Constants {
+    static let timeout = 3 // что бы не ждать срабатывания
+}
+
 class UserNotifications {
     
-    func sendNotifications() {
+    
+    
+    static func notifyRequest() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound, .badge]) { (allowed, error) in
+            
+            guard let error = error else { return }
+            print(error.localizedDescription)
+            
+        }
+    }
+    
+    static func sendNotifications() {
         
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(Constants.timeout) , repeats: false)
         let content = UNMutableNotificationContent()
-        content.title = "First notify"
-        content.body = "It's 30 seconds in background"
+        var contentTitle:String {
+            get {
+                return "First notify"
+            }
+        }
+        var contentBody:String {
+            get {
+                return "It's " + String(trigger.timeInterval) + " seconds in background"
+            }
+        }
+        content.title = contentTitle
+        content.body = contentBody
         content.sound = UNNotificationSound.default
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 30, repeats: false)
+
         let request = UNNotificationRequest(identifier: "notification", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request) { (error) in
             guard let error = error else { return }
             print(error.localizedDescription)
+            
         }
     }
     
-    func removeNotifications() {
+    static func removeNotifications() {
         UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: ["notification"])
     }
     
