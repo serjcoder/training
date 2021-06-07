@@ -11,7 +11,7 @@ import CoreData
 class LunchCounter {
     
     var previousDates:Array = FileStorage.shared["date"] as? Array<Any> ?? []
-    var timeInterval:[TimeIntervalData] = AppDelegate.loadTimeInterval()
+    var timeInterval:[TimeIntervalData] = AppDelegate().loadTimeInterval()
     
     func getStringDate(index:Int) -> String {
         
@@ -38,7 +38,7 @@ class LunchCounter {
         
         previousDates.append(_:date)
         var timeIntervalValue: TimeInterval {
-            if previousDates.count > 0 {
+            if previousDates.count > 1 {
                 guard let lastDay:Date = previousDates[previousDates.count - 2] as? Date else {  return 0 }
                 return date.timeIntervalSince(lastDay as Date)
             } else {
