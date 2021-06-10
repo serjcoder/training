@@ -30,10 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if let context = context {
             
             guard let entity = NSEntityDescription.entity(forEntityName: "TimeIntervalData", in: context) else { return }
-            
             let timeIntervalValueObject = TimeIntervalData(entity: entity, insertInto: context)
             timeIntervalValueObject.value = value
-            
             do {
                 
                 try context.save()
@@ -60,9 +58,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest: NSFetchRequest<TimeIntervalData> = TimeIntervalData.fetchRequest()
         var timeInterval:[TimeIntervalData] = []
-        
+
         do {
             timeInterval = try context.fetch(fetchRequest)
+            return timeInterval
         } catch let error as NSError {
             print("error = \(error.localizedDescription)")
         }
@@ -92,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "data")
+        let container = NSPersistentContainer(name: "Storage")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

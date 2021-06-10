@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C7175760265C2E32002D8942 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C717575F265C2E32002D8942 /* UserNotifications.swift */; };
-		C71757A9265D6D77002D8942 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C71757A7265D6D77002D8942 /* CoreDataModel.xcdatamodeld */; };
+		C71757A9265D6D77002D8942 /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C71757A7265D6D77002D8942 /* Storage.xcdatamodeld */; };
 		C726E4AC2666B2F000D8D1AF /* LunchCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726E4AB2666B2F000D8D1AF /* LunchCounter.swift */; };
 		C726E4B22668020E00D8D1AF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C726E4B12668020E00D8D1AF /* TableViewCell.swift */; };
 		C77F04FB265EB8E600378340 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F04FA265EB8E600378340 /* TableViewController.swift */; };
@@ -77,7 +77,7 @@
 				C7DF6767265564BD0085C187 /* Assets.xcassets */,
 				C7DF6769265564BD0085C187 /* LaunchScreen.storyboard */,
 				C7DF676C265564BD0085C187 /* Info.plist */,
-				C71757A7265D6D77002D8942 /* CoreDataModel.xcdatamodeld */,
+				C71757A7265D6D77002D8942 /* Storage.xcdatamodeld */,
 			);
 			path = fileManager;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 				C7857A0F26565E98000C82A9 /* FileStorage.swift in Sources */,
 				C726E4B22668020E00D8D1AF /* TableViewCell.swift in Sources */,
 				C77F04FB265EB8E600378340 /* TableViewController.swift in Sources */,
-				C71757A9265D6D77002D8942 /* CoreDataModel.xcdatamodeld in Sources */,
+				C71757A9265D6D77002D8942 /* Storage.xcdatamodeld in Sources */,
 				C7DF675F265564B30085C187 /* AppDelegate.swift in Sources */,
 				C726E4AC2666B2F000D8D1AF /* LunchCounter.swift in Sources */,
 				C7DF6761265564B30085C187 /* SceneDelegate.swift in Sources */,
@@ -363,13 +363,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C71757A7265D6D77002D8942 /* CoreDataModel.xcdatamodeld */ = {
+		C71757A7265D6D77002D8942 /* Storage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				C71757A8265D6D77002D8942 /* CoreDataModel.xcdatamodel */,
 			);
 			currentVersion = C71757A8265D6D77002D8942 /* CoreDataModel.xcdatamodel */;
-			path = CoreDataModel.xcdatamodeld;
+			path = Storage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -22,7 +22,6 @@ class LunchCounter {
     }
     
     func getStringTimeInterval(index:Int) -> String {
-        
         if timeInterval.count > 0 {
             let itemTimeInterval:String = String(timeInterval[index].value)
             return itemTimeInterval
