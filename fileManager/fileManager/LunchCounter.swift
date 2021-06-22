@@ -24,7 +24,9 @@ class LunchCounter {
     func getStringTimeInterval(index:Int) -> String {
         if timeInterval.count > 0 {
             let itemTimeInterval:String = String(timeInterval[index].value)
-            return itemTimeInterval
+            let dotIndex = itemTimeInterval.firstIndex(of: ".")!
+            
+            return itemTimeInterval.substring(to: dotIndex)
         } else {
             return "0"
         }

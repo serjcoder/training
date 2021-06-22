@@ -27,30 +27,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func saveTimeInterval (withValue value: Double) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context:NSManagedObjectContext! = appDelegate.persistentContainer.viewContext
-        if let context = context {
-            
-            guard let entity = NSEntityDescription.entity(forEntityName: "TimeIntervalData", in: context) else { return }
-            let timeIntervalValueObject = TimeIntervalData(entity: entity, insertInto: context)
-            timeIntervalValueObject.value = value
-            do {
+        let timeIntervalValueObject = TimeIntervalData(context: context)
+        timeIntervalValueObject.value = value
+
+        do {
                 
-                try context.save()
-                print("context.save")
+            try context.save()
+            print("context.save")
                 
-            } catch let error as NSError {
+        } catch let error as NSError {
                 
-                print("error = \(error.localizedDescription)")
+            print("error = \(error.localizedDescription)")
                 
-            }
-            
-        } else {
-            
-            print("something gotng wrong") 
-            
         }
         
     }
-    
     
     func loadTimeInterval() -> [TimeIntervalData] {
         
@@ -126,6 +117,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             }
         }
     }
-
 }
-
