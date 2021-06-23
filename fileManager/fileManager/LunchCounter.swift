@@ -25,8 +25,10 @@ class LunchCounter {
         if timeInterval.count > 0 {
             let itemTimeInterval:String = String(timeInterval[index].value)
             let dotIndex = itemTimeInterval.firstIndex(of: ".")!
+            let index = itemTimeInterval.index(itemTimeInterval.startIndex, offsetBy: (itemTimeInterval.substring(to: dotIndex).count + 2))
+            let itemTimeIntervalCut = itemTimeInterval[..<index]
             
-            return itemTimeInterval.substring(to: dotIndex)
+            return String(itemTimeIntervalCut)//itemTimeInterval.substring(to: dotIndex)
         } else {
             return "0"
         }
